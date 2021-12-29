@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@drawable/bk1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="ProJect-Shop"
+        android:textSize="60dp"
+        android:textColor="#00FFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="Username:"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your account"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="#2196F3"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/userpassword"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Enter your password"
+            android:textSize="25dp"
+            android:textColor="#2196F3"
+            android:layout_weight="2"
+            android:inputType="textWebPassword"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Remember Password"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#EE4000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:background="#F0F8FF"
+        />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#EE4000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:background="#F0F8FF"
+        />
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password"
+        android:textColor="#FF5500"
+        android:textSize="20dp"
+        android:layout_gravity="right"
+        />
+
+</LinearLayout>
